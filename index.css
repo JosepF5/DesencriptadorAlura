@@ -1,0 +1,169 @@
+body {
+  background: #e5e5e5;
+}
+section {
+  position: absolute;
+  width: 28%;
+  height: 92%;
+  left: 70%;
+  top: 4%;
+  background: #ffffff;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  position: absolute;
+  width: 60%;
+  height: 92%;
+  left: 5%;
+  top: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.voidContainer {
+  text-align: center;
+}
+.warning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 75%;
+  /*  width: 229px;
+  height: 18px;
+   left: 240px;
+  top: 851px; */
+}
+.buttonScript {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 75%;
+  /*  width: 680px;
+  height: 67px;
+   left: 240px;
+  top: 885px; */
+}
+.inputMessage {
+  height: 70%;
+  width: 75%;
+  z-index: 1;
+}
+.btnEncriptar {
+  padding: 24px;
+  gap: 8px;
+  width: 328px;
+  height: 67px;
+  background: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+}
+.btnEncriptar:hover {
+  background-color: #d8dfe8;
+  color: #0a3871;
+}
+.btnDesencriptar {
+  box-sizing: border-box;
+  padding: 24px;
+  gap: 8px;
+  width: 328px;
+  height: 67px;
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #0a3871;
+}
+.btnDesencriptar:hover {
+  background-color: #0a3871;
+  color: #ffffff;
+}
+.warningLabel {
+  width: 205px;
+  height: 18px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #495057;
+  opacity: 0.8;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.logoAlura {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  position: absolute;
+  width: 120px;
+  height: 48px;
+  left: 40px;
+  top: 40px;
+}
+.waitingMessage {
+  width: 75%;
+  height: 15%;
+}
+.messageVoid {
+  width: 336px;
+  height: 58px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #343a40;
+  margin: 10px;
+}
+.adviceVoid {
+  width: 336px;
+  height: 48px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #495057;
+}
+.inputValue {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width:100%;
+  height: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  resize: none;
+  color: #0a3871;
+}
+.inputValue::placeholder {
+  color: #0a3871;
+}
