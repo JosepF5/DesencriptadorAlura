@@ -35,22 +35,14 @@ main {
   padding: 0px;
   gap: 8px;
   width: 75%;
-  /*  width: 229px;
-  height: 18px;
-   left: 240px;
-  top: 851px; */
 }
 .buttonScript {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
   gap: 24px;
   width: 75%;
-  /*  width: 680px;
-  height: 67px;
-   left: 240px;
-  top: 885px; */
 }
 .inputMessage {
   height: 70%;
@@ -169,6 +161,9 @@ main {
   color: #0a3871;
 }
 
+.btnCopiar{
+  width:100%;
+}
 @media (max-width: 768px) {
   /* Estilos para pantallas de 768px o menores */
   body {
@@ -210,14 +205,17 @@ main {
     width: 100%;
   }
   .buttonScript {
+    margin: 0px 0px 10px 0px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     gap: 24px;
     width: 100%;
   }
   .inputMessage {
+    padding: 15px;
     height: 70%;
     width: 100%;
     z-index: 1;
@@ -261,8 +259,6 @@ main {
   .btnDesencriptar:hover {
     background-color: #0a3871;
     color: #ffffff;
-  }
-  .warningLabel {
   }
   .logoAlura {
     display: flex;
@@ -319,7 +315,7 @@ main {
   .buttonScript {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 0;
     gap: 24px;
     width: 100%;

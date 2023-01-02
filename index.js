@@ -73,7 +73,12 @@ document.querySelector(".btnCopiar").addEventListener("click", async () => {
     document.querySelector("#outroMessage").value
   );
 });
-
 document.querySelector(".btnDesencriptar").addEventListener("click", () => {
   procesarMensaje(desencriptar);
 });
+
+document.querySelector("#introMessage").addEventListener('input', (event) => {
+    // Solo permitir minúsculas y sin acentos
+    const valor = event.target.value.toLowerCase().replace(/[^a-z]/g, '');
+    event.target.value = valor;
+  });
