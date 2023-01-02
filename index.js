@@ -33,7 +33,9 @@ function desencriptar(palabraEncriptada) {
   // Recorrer el objeto de llaves y buscar cada "llave" en la palabra encriptada
   let resultado = palabraEncriptada;
   Object.keys(llaves).forEach((llave) => {
-    resultado = resultado.replace(llave, llaves[llave]);
+    while(resultado.replace(llave, llaves[llave])!=resultado){
+        resultado = resultado.replace(llave, llaves[llave]);
+    }
   });
 
   // Devolver la palabra desencriptada
