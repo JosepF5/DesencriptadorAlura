@@ -17,17 +17,18 @@
   <body>
     <img src="assets/logo.png" class="logoAlura" />
     <main>
-      <div class="inputMessage" >
+      <div class="inputMessage">
         <textarea
           class="inputValue"
           placeholder="Ingrese el texto aqui"
           id="introMessage"
-        ></textarea
-        >
+        ></textarea>
       </div>
       <div class="warning">
         <img src="assets/warning.png" class="warningLogo" />
-        <p class="warningLabel">Solo letras minúsculas y sin acento</p>
+        <p class="warningLabel">
+          Solo letras minúsculas y sin acento (se reemplazarán automáticamente)
+        </p>
       </div>
       <div class="buttonScript">
         <button class="btnEncriptar">Encriptar</button>
@@ -35,13 +36,16 @@
       </div>
     </main>
     <section>
-      <div class="inputMessage" id="outroContainer" style="display:none" >
+      <div class="inputMessage" id="outroContainer" style="display: none">
         <textarea
           class="inputValue"
           placeholder="Ingrese el texto aqui"
           id="outroMessage"
           disabled
         ></textarea>
+        <div class="buttonScript">
+          <button class="btnCopiar">Copiar</button>
+        </div>
       </div>
       <div class="voidContainer">
         <img src="assets/waiting.png" class="waitingMessage" />

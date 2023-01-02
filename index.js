@@ -33,8 +33,8 @@ function desencriptar(palabraEncriptada) {
   // Recorrer el objeto de llaves y buscar cada "llave" en la palabra encriptada
   let resultado = palabraEncriptada;
   Object.keys(llaves).forEach((llave) => {
-    while(resultado.replace(llave, llaves[llave])!=resultado){
-        resultado = resultado.replace(llave, llaves[llave]);
+    while (resultado.replace(llave, llaves[llave]) != resultado) {
+      resultado = resultado.replace(llave, llaves[llave]);
     }
   });
 
@@ -48,22 +48,30 @@ function procesarMensaje(funcion) {
   const introMessage = document.querySelector("#introMessage");
   const outroMessage = document.querySelector("#outroMessage");
   const outroContainer = document.querySelector("#outroContainer");
-
+  const valueIntro = introMessage.value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
   // Procesar el mensaje
   if (introMessage.value) {
     voidContainer.style.display = "none";
-    outroMessage.value = funcion(introMessage.value);
+    outroMessage.value = funcion(valueIntro);
     outroContainer.style.display = "block";
     return;
   }
   voidContainer.style.display = "block";
-  outroMessage.value = funcion(introMessage.value);
+  outroMessage.value = funcion(valueIntro);
   outroContainer.style.display = "none";
 }
 
 // Asignar eventos a los botones
 document.querySelector(".btnEncriptar").addEventListener("click", () => {
   procesarMensaje(encriptar);
+});
+document.querySelector(".btnCopiar").addEventListener("click", async () => {
+  await navigator.clipboard.writeText(
+    document.querySelector("#outroMessage").value
+  );
 });
 
 document.querySelector(".btnDesencriptar").addEventListener("click", () => {
