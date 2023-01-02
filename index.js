@@ -39,10 +39,6 @@ function desencriptar(palabraEncriptada) {
   // Devolver la palabra desencriptada
   return resultado;
 }
-console.log(document.querySelector(".inputValue").value.length);
-/* if (document.querySelector(".inputValue").value.length) {
-    document.querySelector(".voidContainer").style.display = "none";
-} */
 
 function procesarMensaje(funcion) {
   // Obtener referencias a los elementos
